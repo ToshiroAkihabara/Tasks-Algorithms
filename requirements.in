@@ -1,6 +1,6 @@
-black
-flake8
+ruff
 mypy
 isort
 pytest
 Cmake
+pysnooper

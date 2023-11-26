@@ -11,5 +11,7 @@ def sol() -> GoesAfter:
 
 @pytest.mark.parametrize("word, first, second, result", [("cable", "a", "b", True)])
 class TestGoesAfter:
-    def test_goes_after(self, sol: GoesAfter, word: str, first: str, second: str, result: bool) -> None:
+    def test_goes_after(
+        self, sol: GoesAfter, word: str, first: str, second: str, result: bool
+    ) -> None:
         assert sol.goes_after(word, first, second) == result

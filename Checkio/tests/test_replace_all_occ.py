@@ -9,7 +9,12 @@ def sol() -> ReplaceWord:
     return solution
 
 
-@pytest.mark.parametrize("main, target, repl, result", [("hello world", "world", "TypeScript", "hello TypeScript")])
+@pytest.mark.parametrize(
+    "main, target, repl, result",
+    [("hello world", "world", "TypeScript", "hello TypeScript")],
+)
 class TestReplaceWord:
-    def test_replace_word(self, sol: ReplaceWord, main: str, target: str, repl: str, result: str) -> None:
+    def test_replace_word(
+        self, sol: ReplaceWord, main: str, target: str, repl: str, result: str
+    ) -> None:
         assert sol.replace_word(main, target, repl) == result
