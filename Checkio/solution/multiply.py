@@ -1,4 +1,5 @@
 from operator import mul as mult_two
+from typing import Any
 
 
 class Multiply:
@@ -6,7 +7,7 @@ class Multiply:
     __b = 5
 
     @classmethod
-    def func(cls) -> int:
+    def func(cls) -> Any:
         return mult_two(cls.__a, cls.__b)
 
 

@@ -19,35 +19,35 @@ class TestSolution:
     def test_two_sum_first(
         self,
         sol: TwoSumSolution,
-        test_nums: list,
+        test_nums: list[int],
         test_target: int,
-        expected_result: list,
+        expected_result: list[int],
     ) -> None:
         assert sol.two_sum_first(test_nums, test_target) == expected_result
 
     def test_two_sum_second(
         self,
         sol: TwoSumSolution,
-        test_nums: list,
+        test_nums: list[int],
         test_target: int,
-        expected_result: list,
+        expected_result: list[int],
     ) -> None:
         assert sol.two_sum_second(test_nums, test_target) == expected_result
 
     def test_two_sum_third(
         self,
         sol: TwoSumSolution,
-        test_nums: list,
+        test_nums: list[int],
         test_target: int,
-        expected_result: list,
+        expected_result: list[int],
     ) -> None:
         assert sol.two_sum_third(test_nums, test_target) == expected_result
 
     def test_two_sum_four(
         self,
         sol: TwoSumSolution,
-        test_nums: list,
+        test_nums: list[int],
         test_target: int,
-        expected_result: list,
+        expected_result: list[int],
     ) -> None:
         assert sol.two_sum_four(test_nums, test_target) == expected_result
