@@ -7,12 +7,12 @@ pip==23.3
 pre-commit==2.13.0
 pytest==6.2.4
 iniconfig==2.0.0
-pytest-asyncio==0.15.1
-pytest-clarity==0.3.0a0
-pytest-cov==2.11.1
-pytest-mock==3.6.1
-pytest-parallel==0.1.0
-pytest-sugar==0.9.4
-pytest-xdist==2.2.1
-types-PyYAML==5.4.3
-types-requests==2.25.0
+# pytest-asyncio==0.15.1
+# pytest-clarity==0.3.0a0
+# pytest-cov==2.11.1
+# pytest-mock==3.6.1
+# pytest-parallel==0.1.0
+# pytest-sugar==0.9.4
+# pytest-xdist==2.2.1
+# types-PyYAML==5.4.3
+# types-requests==2.25.0
