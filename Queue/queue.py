@@ -1,5 +1,5 @@
-from collections import deque
 import logging
+from collections import deque
 
 
 class FIFO:
@@ -11,7 +11,7 @@ class FIFO:
         self.queue.append(item)
         logging.debug(f"Inserted a {item} into the queue")
         
-    def pop(self) -> int:
+    def pop(self) -> int | None:
         if not self.empty():
             item = self.queue.popleft()
             logging.debug(f"Got an element {item} from the queue")
