@@ -1,6 +1,7 @@
-from Matrix_Vectors.vectors import VectorNumpy, VectorList
-import pytest
 import numpy as np
+import pytest
+
+from Matrix_Vectors.vectors import VectorList, VectorNumpy
 
 
 @pytest.fixture()
