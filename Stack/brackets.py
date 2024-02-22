@@ -1,5 +1,3 @@
-import logging
-
 
 def lifo(item: str) -> bool:
     stack = []
