@@ -6,12 +6,6 @@ import pytest
 from Matrix_Vectors.matrix import Matrix
 
 
-@pytest.fixture()
-def matx():
-    matrix = Matrix()
-    return matrix
-
-
 class TestMatrix:
     @pytest.mark.parametrize(
         "matrix_1, matrix_2, expected_result, exception",
