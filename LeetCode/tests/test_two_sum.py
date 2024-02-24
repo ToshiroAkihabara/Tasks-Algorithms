@@ -5,6 +5,9 @@ from LeetCode.two_sum.two_sum_solution import TwoSumSolution
 
 @pytest.fixture()
 def sol() -> TwoSumSolution:
+    """
+    Initial TwoSumSolution
+    """
     solution = TwoSumSolution()
     return solution
 

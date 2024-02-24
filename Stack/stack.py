@@ -1,6 +1,6 @@
-from queue import LifoQueue
-from collections import deque
 import logging
+from collections import deque
+from queue import LifoQueue
 
 
 class Logger:

@@ -1,0 +1,43 @@
+import logging
+
+
+class MergeTwoArr:
+    """
+    Merge two sorted arrays into one piece 
+    """
+
+    def __init__(self, arr_one: list[int], arr_two: list[int]) -> None:
+        logging.basicConfig(level=logging.DEBUG)
+        self.arr_one = arr_one
+        self.arr_two = arr_two
+
+    def merge(self) -> list[int]:
+        i, j = 0, 0
+        res = []
+        while i < len(self.arr_one) and j < len(self.arr_two):
+            if self.arr_one[i] < self.arr_two[j]:
+                res.append(self.arr_one[i])
+                i += 1
+            else:
+                res.append(self.arr_two[j])
+                j += 1
+        if i < len(self.arr_one):
+            res.append(self.arr_one[i])
+            i += 1
+        elif j < len(self.arr_two):
+            res.append(self.arr_two[j])
+            j += j
+
+        return res
+
+
+def main():
+    arr_one = [1, 2, 5, 6, 10, 11, 23, 25, 38]
+    arr_two = [0, 3, 4, 7, 8, 9, 12, 18]
+    two_arr = MergeTwoArr(arr_one=arr_one, arr_two=arr_two)
+    merged = two_arr.merge()
+    logging.info(f"merged_arr: {merged}")
+
+
+if __name__ == "__main__":
+    main()

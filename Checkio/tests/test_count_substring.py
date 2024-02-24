@@ -5,6 +5,9 @@ from Checkio.solution.count_substring import CountOcc
 
 @pytest.fixture
 def sol() -> CountOcc:
+    """
+    Initial CountOcc
+    """
     solution = CountOcc()
     return solution
 

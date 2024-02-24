@@ -4,3 +4,4 @@ isort
 pytest
 Cmake
 pysnooper
+numpy

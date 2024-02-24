@@ -5,6 +5,9 @@ from Checkio.solution.replace_all_occ import ReplaceWord
 
 @pytest.fixture
 def sol() -> ReplaceWord:
+    """
+    Initial ReplaceWord
+    """
     solution = ReplaceWord()
     return solution
 

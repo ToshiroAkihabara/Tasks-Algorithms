@@ -5,6 +5,9 @@ from Checkio.solution.goes_right_after import GoesAfter
 
 @pytest.fixture
 def sol() -> GoesAfter:
+    """
+    Initial GoesAfter
+    """
     solution = GoesAfter()
     return solution
 
