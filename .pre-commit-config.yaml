@@ -37,7 +37,7 @@ repos:
         stages: [commit, push]
         types: [python]
         name: pytest-check
-        entry: python -m pytest -v Checkio/tests/ LeetCode/tests/
+        entry: python -m pytest -v Checkio/tests/ LeetCode/tests/ Matrix_Vectors/tests/
         language: system
         pass_filenames: false
         always_run: true

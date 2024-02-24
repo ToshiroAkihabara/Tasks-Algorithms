@@ -31,11 +31,3 @@ class Heapsort:
             self.heapify(self.arr, i, 0)
         
         logging.debug(self.arr)
-        
-def main():
-    arr = [2, 99, 4, 0, -2, 6, 37]
-    heapsort = Heapsort(arr=arr)
-    heapsort.sort()
-
-if __name__ == "__main__":
-    main()

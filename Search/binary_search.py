@@ -35,10 +35,3 @@ class Search(Logger):
         else:
             logging.debug("Doesn't appear in the arr")
 
-
-if __name__ == "__main__":
-    arr = [2, 5, 10, 11, 15, 21, 33, 56]
-    target = 10
-    s = Search()
-    s.binary_search_recursion(arr, target, 0, len(arr))
-    s.binary_search_linear(arr, target, first_index=0, last_index=len(arr))

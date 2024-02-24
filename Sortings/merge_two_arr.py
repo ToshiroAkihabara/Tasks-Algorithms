@@ -30,14 +30,3 @@ class MergeTwoArr:
 
         return res
 
-
-def main():
-    arr_one = [1, 2, 5, 6, 10, 11, 23, 25, 38]
-    arr_two = [0, 3, 4, 7, 8, 9, 12, 18]
-    two_arr = MergeTwoArr(arr_one=arr_one, arr_two=arr_two)
-    merged = two_arr.merge()
-    logging.info(f"merged_arr: {merged}")
-
-
-if __name__ == "__main__":
-    main()

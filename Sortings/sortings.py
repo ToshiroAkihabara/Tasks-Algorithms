@@ -86,31 +86,4 @@ class Sortings:
         right = [i for i in arr if i > elem]
         
         return self.quicksort(left) + middle + self.quicksort(right)
-    
-    def counting_sort(self) -> list[int]:
-        pass
-    
-    def binary_insertion_sort(self):
-        pass
-    
-    def radix_sort(self):
-        pass
-            
                 
-def main():
-    items = [2, -6, -1, 55, 76, 4, 0, 1, 4, 9, 89]
-    isort = Sortings(arr=items)
-    insertion_sort = isort.insertion_sort()
-    bubble_sort = isort.bubble_sort()
-    selection_sort = isort.selection_sort()
-    merge_sort = isort.merge_sort(arr=items)
-    quick_sort = isort.quicksort(arr=items)
-    logging.debug(f"Insertion sort: {insertion_sort}")
-    logging.debug(f"Bubble sort: {bubble_sort}")
-    logging.debug(f"Selection sort: {selection_sort}")
-    logging.debug(f"Merge sort: {merge_sort}")
-    logging.debug(f"Quick sort: {quick_sort}")
-
-    
-if __name__ == "__main__":
-    main()

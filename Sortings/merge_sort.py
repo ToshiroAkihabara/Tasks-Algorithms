@@ -33,9 +33,3 @@ class MergeSort:
 
         logging.debug(arr)
         return arr
-
-
-if __name__ == "__main__":
-    arr = [2, 0, 1, 5, 3, 1, 6, 4, 10]
-    merge = MergeSort()
-    merge.sort(arr)
