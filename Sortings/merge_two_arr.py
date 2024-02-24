@@ -3,7 +3,7 @@ import logging
 
 class MergeTwoArr:
     """
-    Merge two sorted arrays into one piece 
+    Merge two sorted arrays into one piece
     """
 
     def __init__(self, arr_one: list[int], arr_two: list[int]) -> None:
@@ -29,4 +29,3 @@ class MergeTwoArr:
             j += j
 
         return res
-

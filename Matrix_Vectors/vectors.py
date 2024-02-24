@@ -4,33 +4,25 @@ import numpy as np
 class VectorNumpy:
     @classmethod
     def vectors_sum(
-            cls,
-            v1: np.array([], dtype=int),
-            v2: np.array([], dtype=int)
-        ) -> np.array([], dtype=int):
+        cls, v1: np.array([], dtype=int), v2: np.array([], dtype=int)
+    ) -> np.array([], dtype=int):
         return v1 + v2
 
     @classmethod
     def vectors_sub(
-            cls,
-            v1: np.array([], dtype=int),
-            v2: np.array([], dtype=int)
+        cls, v1: np.array([], dtype=int), v2: np.array([], dtype=int)
     ) -> np.array([], dtype=int):
         return v1 - v2
 
     @classmethod
     def vectors_mult(
-            cls,
-            v1: np.array([], dtype=int),
-            v2: np.array([], dtype=int)
+        cls, v1: np.array([], dtype=int), v2: np.array([], dtype=int)
     ) -> np.array([], dtype=int):
         return v1 * v2
 
     @classmethod
     def vectors_div(
-            cls,
-            v1: np.array([], dtype=int),
-            v2: np.array([], dtype=int)
+        cls, v1: np.array([], dtype=int), v2: np.array([], dtype=int)
     ) -> np.array([], dtype=int):
         return v1 / v2
 

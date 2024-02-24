@@ -2,6 +2,10 @@ import logging
 
 
 class MergeSort:
+    """
+    Worst: O(n log n)
+    """
+
     def __init__(self) -> None:
         logging.basicConfig(level=logging.DEBUG)
 

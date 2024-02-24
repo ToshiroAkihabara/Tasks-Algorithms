@@ -1,4 +1,3 @@
-
 def lifo(item: str) -> bool:
     stack = []
     status = True
@@ -19,4 +18,3 @@ def lifo(item: str) -> bool:
     if len(stack) != 0:
         status = False
     return status
-

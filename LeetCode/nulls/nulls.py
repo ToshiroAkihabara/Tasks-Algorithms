@@ -34,4 +34,3 @@ def nullable_best(arr: list[int]) -> deque[[]]:
         else:
             new_arr.appendleft(i)
     return new_arr
-
