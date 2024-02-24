@@ -1,6 +1,8 @@
+from contextlib import nullcontext as does_not_raises
+
 import numpy as np
 import pytest
-from contextlib import nullcontext as does_not_raises
+
 from Matrix_Vectors.matrix import Matrix
 
 

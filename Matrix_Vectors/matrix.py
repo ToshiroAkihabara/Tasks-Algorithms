@@ -16,7 +16,7 @@ class Matrix:
     @classmethod
     def matrix_mult(
             cls,
-            matrix_1: np.array([], dtype=int),
+             matrix_1: np.array([], dtype=int),
             matrix_2: np.array([], dtype=int)
     ) -> np.array([], int):
         if isinstance(matrix_1, np.ndarray) and isinstance(matrix_2, np.ndarray):
