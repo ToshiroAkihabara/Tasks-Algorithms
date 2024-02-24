@@ -19,7 +19,7 @@ class Search(Logger):
             elif arr[middle_index] < target:
                 return cls.binary_search_recursion(arr, target, middle_index + 1, last_index)
         else:
-            logging.debug(f"Doesn't appear in the arr")
+            logging.debug("Doesn't appear in the arr")
 
     @classmethod
     def binary_search_linear(cls, arr: list[int], target: int, first_index: int, last_index: int) -> int:
@@ -33,7 +33,7 @@ class Search(Logger):
             elif arr[middle_index] < target:
                 first_index = middle_index + 1
         else:
-            logging.debug(f"Doesn't appear in the arr")
+            logging.debug("Doesn't appear in the arr")
 
 
 if __name__ == "__main__":
