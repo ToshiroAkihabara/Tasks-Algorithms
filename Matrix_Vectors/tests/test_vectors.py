@@ -4,6 +4,18 @@ import pytest
 from Matrix_Vectors.vectors import VectorList, VectorNumpy
 
 
+@pytest.fixture()
+def vec_num() -> VectorNumpy:
+    vector_numpy = VectorNumpy()
+    return vector_numpy
+
+
+@pytest.fixture()
+def vec_list() -> VectorList:
+    vector_list = VectorList()
+    return vector_list
+
+
 class TestVectorNumpy:
     def test_vector_sum(self, vec_num: VectorNumpy) -> None:
         assert (
@@ -12,14 +24,12 @@ class TestVectorNumpy:
 
     def test_vector_sub(self, vec_num: VectorNumpy) -> None:
         assert (
-            vec_num.vectors_sub(np.array([2, 3]), np.array([5, 8]))
-            == np.array([-3, -5])
+            vec_num.vectors_sub(np.array([2, 3]), np.array([5, 8])) == np.array([-3, -5])
         ).all()
 
     def test_vector_mult(self, vec_num: VectorNumpy) -> None:
         assert (
-            vec_num.vectors_mult(np.array([2, 3]), np.array([5, 8]))
-            == np.array([10, 24])
+            vec_num.vectors_mult(np.array([2, 3]), np.array([5, 8])) == np.array([10, 24])
         ).all()
 
     def test_vector_div(self, vec_num: VectorNumpy) -> None:
