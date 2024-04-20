@@ -18,7 +18,7 @@ def sol() -> TwoSumSolution:
         ([2, 1, 7, 8, 10, 3, 2, 5, 4, 9], 5, [0, 5]),
     ],
 )
-class TestSolution:
+class TestTwoSum:
     def test_two_sum_first(
         self,
         sol: TwoSumSolution,
